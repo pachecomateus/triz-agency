@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const mundial = localFont({
+  src: "../fonts/mundial-regular.woff2",
+  weight: "400",
+  style: "normal",
+  variable: "--font-mundial",
 });
 
 export const metadata: Metadata = {
   title: "Triz Agency",
-  description: "Posicionameos sua empresa no digital com estratégia e criatividade.",
+  description: "Posicionamos sua empresa no digital com estratégia e criatividade.",
 };
 
 export default function RootLayout({
@@ -25,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden scrollbar`}
+        className={`${mundial.variable} antialiased overflow-x-hidden scrollbar`}
       >
         {children}
       </body>
