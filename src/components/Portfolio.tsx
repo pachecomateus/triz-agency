@@ -41,7 +41,7 @@ export default function Portfolio() {
     }
   ]
   return (
-    <section className="relative bg-gray">
+    <section className="relative bg-gray" id="portfolio">
       <div className="bg-gradient-to-r from-green via-[#d3faaa] to-[#dbff93] rounded-t-[50px]">
         <div className="container">
           <div className="flex items-center gap-4 ml-[-40px] pt-20 pb-16">

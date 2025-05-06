@@ -4,6 +4,7 @@ import Video from "@/components/Video";
 import Services from "@/components/Services";
 import Header from "@/components/Header";
 import Portfolio from "@/components/Portfolio";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <People />
       <Services />
       <Portfolio />
+      <Contact />
     </main>
   );
 }
