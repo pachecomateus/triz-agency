@@ -2,9 +2,12 @@ import About from "@/components/About";
 import People from "@/components/People";
 import Video from "@/components/Video";
 import Services from "@/components/Services";
+import Header from "@/components/Header";
+
 export default function Home() {
   return (
-    <main>
+    <main className="bg-gray">
+      <Header />
       <Video />
       <About />
       <People />

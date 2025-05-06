@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useState } from "react";
+// import gsap from "gsap"
+// import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 export default function Video({className}: Readonly<{className?: string}>) {
   const [isMobile, setIsMobile] = useState<boolean | undefined>(undefined);
@@ -14,8 +16,32 @@ export default function Video({className}: Readonly<{className?: string}>) {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+    
+  //   // Set initial state
+  //   gsap.set(".video-container", {
+  //     scale: 1,
+  //     opacity: 1
+  //   });
+
+  //   gsap.to(".video-container", {
+  //     scale: 1.2,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".video-container",
+  //       start: "top top",
+  //       end: "bottom top",
+  //       scrub: 1,
+  //       pin: true,
+  //       markers: false,
+  //       anticipatePin: 1,
+  //     },
+  //   });
+  // }, []);
+
   return (
-    <section className={`${className} h-screen w-screen bg-gray`}>
+    <section className={`${className} h-[100svh] w-screen fixed top-0 left-0 z-0 bg-gray video-container`}>
       {isMobile === false && (
         <video
           src={"/videos/video-home.mp4"}
