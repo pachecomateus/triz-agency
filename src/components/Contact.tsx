@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function Contact() {
   const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
       setLoading(true);
@@ -39,9 +39,9 @@ export default function Contact() {
         <div className="lg:w-1/2 h-full relative">
           <Image src="/images/bolha.jpeg" alt="Bolha" fill quality={100} className="object-cover" />
           <div className="absolute flex flex-col gap-6 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white">
-            <h2 className="text-6xl font-bold leading-[45px]">Vamos conversar?</h2>
-            <p className="text-2xl font-semibold">Se você chegou até aqui, você esta prestes a dar o clique inicial.</p>
-            <p className="text-2xl font-semibold">Entre em contato!</p>
+            <h2 className="text-4xl lg:text-6xl font-bold lg:leading-[45px]">Vamos conversar?</h2>
+            <p className="text-lg lg:text-2xl font-semibold">Se você chegou até aqui, você esta prestes a dar o clique inicial.</p>
+            <p className="text-lg lg:text-2xl font-semibold">Entre em contato!</p>
           </div>
         </div>
 
