@@ -11,18 +11,20 @@ export default function People() {
   const slides = [
     {
       title: "Quem está <br /> por trás <br /> da Triz",
-      imageDesk: "/images/people/slide-1.png",
+      imageDesk: "/images/people/slide-1-color.png",
       imageMob: "/images/people/slide-1-mob.png"
     },
     {
       name: "Adones",
-      description: "Publicitário com mais de 10 anos de estrada no digital e mais de 3 anos dentro do TikTok, Adones é o estrategista da Triz. <br /><br /> Com vasta experiência em soluções digitais, redes sociais e tráfego pago, ele é quem constrói a base analítica dos projetos, garantindo que cada ideia criativa também seja eficiente e rentável. <br /><br /> No tempo livre, troca as telas pelo sol, praticando beach tennis e trazendo essa energia vibrante para tudo o que faz.",
+      descriptionDesk: "Publicitário com mais de 10 anos de estrada no digital e mais de 3 anos dentro do TikTok, Adones é o estrategista da Triz. <br /><br /> Com vasta experiência em soluções digitais, redes sociais e tráfego pago, ele é quem constrói a base analítica dos projetos, garantindo que cada ideia criativa também seja eficiente e rentável. <br /><br /> No tempo livre, troca as telas pelo sol, praticando beach tennis e trazendo essa energia vibrante para tudo o que faz.",
+      descriptionMob: "<strong style='font-size: 12px'>Publicitário com mais de 10 anos de estrada no digital e mais de 3 anos dentro do TikTok, Adones é o estrategista da Triz.</strong> <br /><br /> Com vasta experiência em soluções digitais, redes sociais e tráfego pago, ele é quem constrói a base analítica dos projetos, garantindo que cada ideia criativa também seja eficiente e rentável. <br /><br /> No tempo livre, troca as telas pelo sol, praticando beach tennis e trazendo essa energia vibrante para tudo o que faz.",
       imageDesk: "/images/people/slide-2.png",
       imageMob: "/images/people/slide-2-mob.png"
     },
     {
       name: "Victória",
-      description: "Publicitária de formação, Victória é apaixonada pela criação desde sempre. <br /><br /> Especialista em Direção de Arte e Branding, ela enxerga além do óbvio: acredita que marcas únicas precisam ter alma e propósito. Seu olhar cuidadoso para estética e identidade transforma cada projeto em algo autêntico e memorável. <br /><br /> Indo além da profissão, ela encontra inspiração na cerâmica fria, hobby onde continua moldando ideias e explorando novas formas de expressão.",
+      descriptionDesk: "Publicitária de formação, Victória é apaixonada pela criação desde sempre. <br /><br /> Especialista em Direção de Arte e Branding, ela enxerga além do óbvio: acredita que marcas únicas precisam ter alma e propósito. Seu olhar cuidadoso para estética e identidade transforma cada projeto em algo autêntico e memorável. <br /><br /> Indo além da profissão, ela encontra inspiração na cerâmica fria, hobby onde continua moldando ideias e explorando novas formas de expressão.",
+      descriptionMob: "<strong style='font-size: 12px'>Publicitária de formação, Victória é apaixonada pela criação desde sempre.</strong> <br /><br /> Especialista em Direção de Arte e Branding, ela enxerga além do óbvio: acredita que marcas únicas precisam ter alma e propósito. Seu olhar cuidadoso para estética e identidade transforma cada projeto em algo autêntico e memorável. <br /><br /> Indo além da profissão, ela encontra inspiração na cerâmica fria, hobby onde continua moldando ideias e explorando novas formas de expressão.",
       imageDesk: "/images/people/slide-3.png",
       imageMob: "/images/people/slide-3-mob.png"
     },
@@ -47,17 +49,23 @@ export default function People() {
               {index === 0 ? (
                 <div
                   className="relative top-1/2 -translate-y-1/2 xl:left-[150px] left-[50px] z-10 text-white text-[40px] md:text-[64px] leading-[1] md:max-w-[245px] max-w-[150px] font-semibold"
-                  dangerouslySetInnerHTML={{ __html: slide.title ?? slide.description }}
+                  dangerouslySetInnerHTML={{ __html: slide.title ?? slide.descriptionDesk }}
                 />
               ) : (
-                <div
-                  className="relative top-1/2 -translate-y-1/2 right-0 ml-auto z-10 text-gray text-[11px] md:text-xl md:leading-[25px] max-w-[170px] md:max-w-[270px] lg:max-w-[420px]"
-                  dangerouslySetInnerHTML={{ __html: slide.title ?? slide.description }}
-                />
+                <>
+                  <div
+                    className="relative top-1/2 -translate-y-1/2 right-0 ml-auto z-10 text-gray text-[11px] md:text-xl md:leading-[25px] max-w-[170px] md:max-w-[270px] lg:max-w-[420px] block lg:hidden"
+                    dangerouslySetInnerHTML={{ __html: slide.title ?? slide.descriptionMob }}
+                  />
+                  <div
+                    className="relative top-1/2 -translate-y-1/2 right-0 ml-auto z-10 text-gray text-[11px] md:text-xl md:leading-[25px] max-w-[170px] md:max-w-[270px] lg:max-w-[420px] hidden lg:block"
+                    dangerouslySetInnerHTML={{ __html: slide.title ?? slide.descriptionDesk }}
+                  />
+                </>
               )}
             </div>
             <Image src={slide.imageDesk} alt={slide.title ?? slide.name} className="w-full h-full object-cover hidden md:block" fill quality={100} />
-            <Image src={slide.imageMob} alt={slide.title ?? slide.name} className="w-full h-full object-cover block md:hidden" fill quality={100} />
+            <Image src={slide.imageMob} alt={slide.title ?? slide.name} className="w-full h-full object-cover object-bottom block md:hidden" fill quality={100} />
           </SwiperSlide>
         ))}
       </Swiper>

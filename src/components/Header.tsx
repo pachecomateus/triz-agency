@@ -37,7 +37,7 @@ export default function Header() {
       <header className="container fixed top-2 left-0 right-0 z-20 rounded-3xl bg-transparent hover:bg-gray transition-colors duration-300 ease-in-out hidden lg:block">
         <div className="flex items-center justify-between">
           <Link href="/" title="Triz">
-            <Image src="/images/logo-branco-desktop.png" alt="Logo Triz" width={216} height={122} quality={100} />
+            <Image src="/images/logo-completo-colorido.png" alt="Logo Triz" width={216} height={122} quality={100} />
           </Link>
           <nav>
             <ul className="flex items-center gap-10 pr-12 uppercase">
@@ -58,7 +58,7 @@ export default function Header() {
       <header className="container fixed top-2 left-0 right-0 shadow-xl !mx-2 w-[calc(100%-1rem)] z-20 rounded-3xl bg-gray block lg:hidden">
         <div className="flex items-center justify-between">
           <Link href="/" title="Triz" className="-ml-12 mt-2">
-            <Image src="/images/logo-branco.png" alt="Logo Triz" width={180} height={122} quality={100} />
+            <Image src="/images/logo-colorido.png" alt="Logo Triz" width={180} height={122} quality={100} />
           </Link>
 					<button
             type="button"
