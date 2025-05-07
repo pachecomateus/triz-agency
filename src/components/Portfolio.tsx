@@ -50,7 +50,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-[1800px] lg:h-[1130px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-[1900px] lg:h-[1200px] 2xl:h-[1400px]">
         {mosaic.map((item, index) => (
           <Link key={item.title + index} href={item.href} target="_blank" title={item.title} className="relative group w-full h-full">
             <div className="absolute inset-0 z-5 w-full h-full bg-black/60 group-hover:bg-transparent transition-all duration-500" />
@@ -58,7 +58,7 @@ export default function Portfolio() {
               <p className="text-white text-center font-semibold lg:text-3xl text-lg">{item.title}</p>
               <p className="text-white text-center font-semibold lg:text-xl text-base">{item.description}</p>
             </div>
-            <Image src={item.image} alt={item.title} fill quality={100} className="object-cover object-center lg:grayscale group-hover:grayscale-0 transition-all duration-500" />
+            <Image src={item.image} alt={item.title} fill quality={100} className="object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-500" />
           </Link>
         ))}
       </div>

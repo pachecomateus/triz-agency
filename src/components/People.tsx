@@ -11,22 +11,22 @@ export default function People() {
   const slides = [
     {
       title: "Quem está <br /> por trás <br /> da Triz",
-      imageDesk: "/images/people/slide-1-color.png",
+      imageDesk: "/images/people/slide-1-nofilter.png",
       imageMob: "/images/people/slide-1-mob.png"
     },
     {
       name: "Adones",
       descriptionDesk: "Publicitário com mais de 10 anos de estrada no digital e mais de 3 anos dentro do TikTok, Adones é o estrategista da Triz. <br /><br /> Com vasta experiência em soluções digitais, redes sociais e tráfego pago, ele é quem constrói a base analítica dos projetos, garantindo que cada ideia criativa também seja eficiente e rentável. <br /><br /> No tempo livre, troca as telas pelo sol, praticando beach tennis e trazendo essa energia vibrante para tudo o que faz.",
       descriptionMob: "<strong style='font-size: 12px'>Publicitário com mais de 10 anos de estrada no digital e mais de 3 anos dentro do TikTok, Adones é o estrategista da Triz.</strong> <br /><br /> Com vasta experiência em soluções digitais, redes sociais e tráfego pago, ele é quem constrói a base analítica dos projetos, garantindo que cada ideia criativa também seja eficiente e rentável. <br /><br /> No tempo livre, troca as telas pelo sol, praticando beach tennis e trazendo essa energia vibrante para tudo o que faz.",
-      imageDesk: "/images/people/slide-2.png",
-      imageMob: "/images/people/slide-2-mob.png"
+      imageDesk: "/images/people/slide-2-nofilter.png",
+      imageMob: "/images/people/slide-2-mob-nofilter.svg"
     },
     {
       name: "Victória",
       descriptionDesk: "Publicitária de formação, Victória é apaixonada pela criação desde sempre. <br /><br /> Especialista em Direção de Arte e Branding, ela enxerga além do óbvio: acredita que marcas únicas precisam ter alma e propósito. Seu olhar cuidadoso para estética e identidade transforma cada projeto em algo autêntico e memorável. <br /><br /> Indo além da profissão, ela encontra inspiração na cerâmica fria, hobby onde continua moldando ideias e explorando novas formas de expressão.",
       descriptionMob: "<strong style='font-size: 12px'>Publicitária de formação, Victória é apaixonada pela criação desde sempre.</strong> <br /><br /> Especialista em Direção de Arte e Branding, ela enxerga além do óbvio: acredita que marcas únicas precisam ter alma e propósito. Seu olhar cuidadoso para estética e identidade transforma cada projeto em algo autêntico e memorável. <br /><br /> Indo além da profissão, ela encontra inspiração na cerâmica fria, hobby onde continua moldando ideias e explorando novas formas de expressão.",
-      imageDesk: "/images/people/slide-3.png",
-      imageMob: "/images/people/slide-3-mob.png"
+      imageDesk: "/images/people/slide-3-nofilter.png",
+      imageMob: "/images/people/slide-3-mob-nofilter.svg"
     },
   ];
   return (
