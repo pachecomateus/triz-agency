@@ -85,7 +85,7 @@ export default function Contact() {
                   </button>
                   <div className="flex justify-end w-full">
                     <HCaptcha 
-                      sitekey="59321d80-7090-459c-83a0-a734b0ca7478"
+                      sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
                       reCaptchaCompat={false}
                       onVerify={onHCaptchaChange}
                       loadAsync={true}
