@@ -64,8 +64,8 @@ export default function Contact() {
         </div>
 
         <div className="lg:w-1/2 relative flex justify-center items-center bg-gray py-20">
-          {error && <p className="text-center text-white text-lg lg:text-2xl">Ocorreu um erro ao enviar sua mensagem. <br /> Por favor, tente novamente mais tarde.</p>}
-          {success && <p className="text-center text-green text-lg lg:text-2xl">Obrigado! <br /> Seus dados foram enviados com sucesso, em breve entraremos em contato.</p>}
+          {error && <p className="text-center px-12 text-white text-lg lg:text-2xl">Ocorreu um erro ao enviar sua mensagem. <br /> Por favor, tente novamente mais tarde.</p>}
+          {success && <p className="text-center px-12 text-green text-lg lg:text-2xl">Obrigado! <br /> Seus dados foram enviados com sucesso, em breve entraremos em contato.</p>}
           {!error && !success && (
               <form onSubmit={handleSubmit} className="flex flex-col gap-4 lg:gap-5 min-w-[300px] lg:min-w-[370px] m-auto">
                   <input type="hidden" name="subject" value="Novo lead recebido" />
