@@ -17,24 +17,24 @@ export default function Header() {
     },
     {
       label: "Sobre nós",
-      href: "#sobre-nos",
+      href: "/#sobre-nos",
     },
     {
       label: "Serviços",
-      href: "#servicos",
+      href: "/#servicos",
     },
     {
       label: "Portfólio",
-      href: "#portfolio",
+      href: "/#portfolio",
     },
     {
       label: "Contato",
-      href: "#contato",
+      href: "/#contato",
     },
   ];
   return (
     <>
-      <header className="container fixed top-2 left-0 right-0 z-20 rounded-3xl bg-transparent hover:bg-gray transition-colors duration-300 ease-in-out hidden lg:block">
+      <header className="container fixed top-2 left-0 right-0 z-20 rounded-3xl bg-transparent hover:bg-gray hover:shadow-xl transition-all duration-300 ease-in-out hidden lg:block">
         <div className="flex items-center justify-between">
           <Link href="/" title="Triz">
             <Image src="/images/logo-completo-colorido.png" alt="Logo Triz" width={216} height={122} quality={100} />
