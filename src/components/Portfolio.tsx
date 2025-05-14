@@ -7,7 +7,7 @@ export default function Portfolio() {
       title: "Arena Hills",
       description: "Gestão e produção",
       image: "/images/portfolio/mosaico-1.png",
-      href: "https://www.instagram.com/arena_hills/"
+      href: "https://www.instagram.com/reel/DIGznRTxrVH/?igsh=MTk4NmxveWdtY3JjMg=="
     },
     {
       title: "Flow Hortolândia",
