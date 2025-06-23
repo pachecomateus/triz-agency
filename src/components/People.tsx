@@ -58,7 +58,7 @@ export default function People() {
                     dangerouslySetInnerHTML={{ __html: slide.title ?? slide.descriptionMob }}
                   />
                   <div
-                    className="relative top-1/2 -translate-y-1/2 right-0 ml-auto z-10 text-gray text-[11px] md:text-xl md:leading-[25px] max-w-[170px] md:max-w-[270px] lg:max-w-[420px] hidden lg:block"
+                    className="relative top-1/2 -translate-y-1/2 right-0 ml-auto z-10 text-gray text-[11px] md:text-xl md:leading-[25px] max-w-[170px] md:max-w-[270px] lg:max-w-[450px] 2xl:max-w-[550px] hidden lg:block"
                     dangerouslySetInnerHTML={{ __html: slide.title ?? slide.descriptionDesk }}
                   />
                 </>

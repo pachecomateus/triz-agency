@@ -3,17 +3,29 @@ import Link from "next/link";
 
 export default function Portfolio() {
   const mosaic = [
-    {
-      title: "Arena Hills",
-      description: "Gestão e produção",
-      image: "/images/portfolio/mosaico-1.png",
-      href: "https://www.instagram.com/reel/DIGznRTxrVH/?igsh=MTk4NmxveWdtY3JjMg=="
-    },
+    // {
+    //   title: "Arena Hills",
+    //   description: "Gestão e produção",
+    //   image: "/images/portfolio/mosaico-1.png",
+    //   href: "https://www.instagram.com/reel/DIGznRTxrVH/?igsh=MTk4NmxveWdtY3JjMg=="
+    // },
     {
       title: "Flow Hortolândia",
       description: "Gestão e produção",
       image: "/images/portfolio/mosaico-2.png",
-      href: "https://www.instagram.com/p/DI37MNjOHRU/"
+      href: "https://www.instagram.com/sejaflow_hortolandia/"
+    },
+    {
+      title: "Mariana Rossi",
+      description: "Gestão e produção",
+      image: "/images/portfolio/mari.jpeg",
+      href: "https://www.instagram.com/marianarossiconsultoria/"
+    },
+    {
+      title: "Zaqueu Magalhães",
+      description: "Gestão e produção",
+      image: "/images/portfolio/zaqueu.jpeg",
+      href: "https://www.instagram.com/zmagalhaesimoveis/"
     },
     {
       title: "Póti",
@@ -50,7 +62,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-[1900px] lg:h-[1200px] 2xl:h-[1400px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-[2600px] lg:h-[1700px] 2xl:h-[2000px]">
         {mosaic.map((item, index) => (
           <Link key={item.title + index} href={item.href} target="_blank" title={item.title} className="relative group w-full h-full">
             <div className="absolute inset-0 z-5 w-full h-full bg-black/60 group-hover:bg-transparent transition-all duration-500" />

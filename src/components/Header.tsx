@@ -34,7 +34,7 @@ export default function Header() {
   ];
   return (
     <>
-      <header className="container fixed top-2 left-0 right-0 z-20 rounded-3xl bg-transparent hover:bg-gray hover:shadow-xl transition-all duration-300 ease-in-out hidden lg:block">
+      <header className="container fixed top-2 left-0 right-0 z-20 rounded-3xl bg-gray shadow-lg transition-all duration-300 ease-in-out hidden lg:block">
         <div className="flex items-center justify-between">
           <Link href="/" title="Triz">
             <Image src="/images/logo-completo-colorido.png" alt="Logo Triz" width={216} height={122} quality={100} />
