@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="relative flex lg:flex-row flex-col bg-gray mt-[100svh] lg:py-[150px] pb-20 z-10" id="sobre-nos">
+    <section className="relative flex lg:flex-row flex-col bg-black lg:py-[150px] pb-20 z-10" id="sobre-nos">
       <div className="container flex lg:flex-row flex-col">
         <div className="relative lg:w-1/2 h-[200px] lg:h-auto">
             <Image src="/images/logo-colorido.png" alt="Logo Triz" fill quality={100} className="object-contain" />

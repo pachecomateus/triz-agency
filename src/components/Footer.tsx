@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gray text-white w-full py-10">
+    <footer className="relative bg-black text-white w-full py-10">
       <div className="container">
         <div className="flex flex-col lg:flex-row justify-center items-center">
           <Link href="https://www.instagram.com/ag.triz/" target="_blank" title="Triz" className="group flex items-center">

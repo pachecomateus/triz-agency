@@ -53,12 +53,12 @@ export default function Portfolio() {
     }
   ]
   return (
-    <section className="relative bg-gray" id="portfolio">
-      <div className="bg-gradient-to-r from-green via-[#d3faaa] to-[#dbff93] rounded-t-[50px]">
+    <section className="relative bg-black" id="portfolio">
+      <div className="bg-gradient-to-r from-black to-black rounded-t-[50px]">
         <div className="container">
-          <div className="flex items-center gap-4 ml-[-40px] pt-20 pb-16">
-            <Image src="/images/gradiente-preto.png" alt="Detalhe" width={100} height={48} quality={100} />
-            <h2 className="-ml-10 text-3xl lg:text-5xl text-gray font-semibold">Portfólio</h2>
+          <div className="flex items-center gap-4 pt-20 pb-16">
+            {/* <Image src="/images/gradiente-preto.png" alt="Detalhe" width={100} height={48} quality={100} /> */}
+            <h2 className="text-3xl lg:text-5xl text-beige font-semibold">Portfólio</h2>
           </div>
         </div>
       </div>

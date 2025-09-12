@@ -52,34 +52,34 @@ export default function Contact() {
     };
   
   return (
-    <section className="relative bg-gray h-[1100px] lg:h-[800px]" id="contato">
+    <section className="relative bg-green h-[1100px] lg:h-[800px]" id="contato">
       <div className="flex flex-col lg:flex-row h-full">
         <div className="lg:w-1/2 h-full relative">
-          <Image src="/images/bolha.jpeg" alt="Bolha" fill quality={100} className="object-cover" />
-          <div className="absolute flex flex-col gap-6 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white">
-            <h2 className="text-4xl lg:text-6xl font-bold lg:leading-[45px]">Vamos conversar?</h2>
-            <p className="text-lg lg:text-2xl font-semibold">Se você chegou até aqui, você esta prestes a dar o clique inicial.</p>
-            <p className="text-lg lg:text-2xl font-semibold">Entre em contato!</p>
+          <Image src="/images/z-beige.svg" alt="Z" fill quality={100} className="object-cover" />
+          <div className="absolute flex flex-col gap-6 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-black">
+            <h2 className="text-4xl lg:text-6xl lg:leading-[45px]">Vamos <span className="font-bold">conversar?</span></h2>
+            <p className="text-lg lg:text-2xl ">Se você chegou até aqui, você esta prestes a dar o clique inicial.</p>
+            <p className="text-lg lg:text-2xl ">Entre em contato!</p>
           </div>
         </div>
 
-        <div className="lg:w-1/2 relative flex justify-center items-center bg-gray py-20">
-          {error && <p className="text-center px-12 text-white text-lg lg:text-2xl">Ocorreu um erro ao enviar sua mensagem. <br /> Por favor, tente novamente mais tarde.</p>}
-          {success && <p className="text-center px-12 text-green text-lg lg:text-2xl">Obrigado! <br /> Seus dados foram enviados com sucesso, em breve entraremos em contato.</p>}
+        <div className="lg:w-1/2 relative flex justify-center items-center bg-green lg:py-20 pb-20">
+          {error && <p className="text-center px-12 text-black text-lg lg:text-2xl">Ocorreu um erro ao enviar sua mensagem. <br /> Por favor, tente novamente mais tarde.</p>}
+          {success && <p className="text-center px-12 text-black text-lg lg:text-2xl">Obrigado! <br /> Seus dados foram enviados com sucesso, em breve entraremos em contato.</p>}
           {!error && !success && (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4 lg:gap-5 min-w-[300px] lg:min-w-[370px] m-auto">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-4 lg:gap-5 min-w-[300px] lg:min-w-[370px] m-auto placeholder:text-black">
                   <input type="hidden" name="subject" value="Novo lead recebido" />
                   <input type="hidden" name="from_name" value="trizagency.com.br" />
-                  <input required type="text" name="name" placeholder="Nome completo" className="bg-white rounded-full px-5 py-2 outline-green" minLength={2} maxLength={50} />
-                  <input required type="email" name="email" placeholder="E-mail" className="bg-white rounded-full px-5 py-2 outline-green" maxLength={50} />
-                  <input required type="tel" name="phone" placeholder="Telefone" className="bg-white rounded-full px-5 py-2 outline-green" minLength={8} maxLength={20} />
-                  <input type="text" name="company" placeholder="Nome da empresa" className="bg-white rounded-full px-5 py-2 outline-green" maxLength={50} />
-                  <input type="text" name="segment" placeholder="Segmento" className="bg-white rounded-full px-5 py-2 outline-green" maxLength={50} />
-                  <textarea required name="mensagem" placeholder="Mensagem" rows={4} className="bg-white rounded-2xl px-5 py-2 resize-none outline-green" maxLength={1000} />
+                  <input required type="text" name="name" placeholder="Nome completo" className="bg-transparent rounded-full px-5 py-2 outline-black border-black border" minLength={2} maxLength={50} />
+                  <input required type="email" name="email" placeholder="E-mail" className="bg-transparent rounded-full px-5 py-2 outline-black border-black border" maxLength={50} />
+                  <input required type="tel" name="phone" placeholder="Telefone" className="bg-transparent rounded-full px-5 py-2 outline-black border-black border" minLength={8} maxLength={20} />
+                  <input type="text" name="company" placeholder="Nome da empresa" className="bg-transparent rounded-full px-5 py-2 outline-black border-black border" maxLength={50} />
+                  <input type="text" name="segment" placeholder="Segmento" className="bg-transparent rounded-full px-5 py-2 outline-black border-black border" maxLength={50} />
+                  <textarea required name="mensagem" placeholder="Mensagem" rows={4} className="bg-transparent rounded-2xl px-5 py-2 resize-none outline-black border-black border" maxLength={1000} />
                   <button 
                     disabled={loading} 
                     type="submit" 
-                    className="bg-green rounded-full px-5 py-2 self-end cursor-pointer text-beige hover:bg-green/70 hover:text-white transition-all duration-300 outline-primary disabled:opacity-50 disabled:cursor-default disabled:pointer-events-none"
+                    className="bg-beige rounded-full px-5 py-2 self-end cursor-pointer text-black hover:bg-black hover:text-white transition-all duration-300 outline-black border-black border disabled:opacity-50 disabled:cursor-default disabled:pointer-events-none"
                   >
                       {loading ? 'Enviando...' : 'Enviar'}
                   </button>

@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className="bg-beige">
       <body
         className={`${mundial.variable} antialiased overflow-x-hidden scrollbar`}
       >
