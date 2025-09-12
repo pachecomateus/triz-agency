@@ -25,7 +25,7 @@ export default function Banner() {
             <section className="relative flex lg:flex-row flex-col bg-black lg:py-[100px] pb-20 z-0" id="sobre-nos">
                 <div className="container flex items-center justify-between w-full lg:flex-row flex-col">
                     <div className="lg:w-3/5">
-                        <Image src="/images/adones-victoria.png" alt="Fundadores" width={1000} height={500} quality={100} className="object-contain lg:max-w-[580px] max-w-full relative m-auto" />
+                        <Image src="/images/adones-victoria.png" alt="Fundadores" width={1000} height={500} quality={100} className="object-contain lg:max-w-[580px] max-w-full relative ml-5 lg:m-auto" />
                     </div>
 
                     <div className="lg:w-2/5 text-beige lg:text-lg text-base">
